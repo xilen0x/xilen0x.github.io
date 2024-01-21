@@ -1,9 +1,18 @@
 body {
-	background-color: #0F1A1C !important;
-	color: #333;
+	background-color: #131F23 !important;
+	color: #f2f2f2;
 }
 
 .h1-color {
 	color: #f2f2f2;
-	background-color: #333;
+}
+
+.card-color {
+	background-color: #0F1111;
+	--bs-border-color: #205161;
+}
+
+.btn-color{
+	background-color: #36b456 !important;
+	color: #0f2911 !important;
 }

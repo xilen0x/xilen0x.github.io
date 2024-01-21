@@ -1,4 +1,17 @@
 body {
+	background-color: #f2f2f2 !important;
+}
+
+.h1-color {
+	color: #f2f2f2 !important;
+}
+
+.btn-color{
+	background-color: #f8f405 !important;
+	color: #0F1A1C;
+}
+
+/*body {
 	background-color: #F2F4F5;
 	color: #333;
 }
@@ -78,4 +91,4 @@ body {
 
   .bd-mode-toggle .dropdown-menu .active .bi {
 	display: block !important;
-  }
+  }*/
