@@ -1,5 +1,5 @@
 body {
-	background-color: #131F23 !important;
+	background-color: #0F1111 !important;
 	color: #f2f2f2;
 }
 
@@ -8,11 +8,16 @@ body {
 }
 
 .card-color {
-	background-color: #0F1111;
+	background-color: #131F23;
 	--bs-border-color: #205161;
 }
 
 .btn-color{
 	background-color: #36b456 !important;
 	color: #0f2911 !important;
+}
+
+.btn-color-sec{
+	color: #0f2911 !important;
+	background-color: #36b456 !important;
 }
