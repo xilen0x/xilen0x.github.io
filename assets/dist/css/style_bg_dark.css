@@ -21,3 +21,8 @@ body {
 	color: #0f2911 !important;
 	background-color: #36b456 !important;
 }
+
+/*breadcrumb*/
+.bg-body-tertiar{
+	background-color: #131F23 !important;
+}
