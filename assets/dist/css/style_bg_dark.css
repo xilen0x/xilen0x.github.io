@@ -8,8 +8,8 @@ body {
 }
 
 .card-color {
-	background-color: #131F23;
-	--bs-border-color: #205161;
+	background-color: #131F23!important;
+	--bs-border-color: #205161!important;
 }
 
 .btn-color{
