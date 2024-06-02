@@ -57,7 +57,7 @@
 <main>
   <div class="container py-4">
     <header class="pb-3 mb-4 border-bottom">
-        <span class="fs-4">Carlos Astorga | Computer Engineer | Msc. Big Data & Data Science.</span>
+        <span class="fs-4">Carlos Astorga | Computer Engineer.</span>
       </a>
     </header>
 
@@ -69,6 +69,209 @@
       </div>
     </div>
 
+	<div class="container my-4">
+		<div class="row align-items-md-stretch">
+			<div class="col-md-6">
+				<div class="h-100 p-5 border card-color rounded-3">
+					<h2>Minishell Project</h2>
+					<p>The <strong>minishell</strong> project involves creating a simplified version of a shell, similar to bash, that efficiently handles command execution, redirections, pipes, and signals, while implementing essential built-in commands with the following functionalities:</p>
+					
+					<div class="accordion" id="minishellAccordion">
+						<div class="card">
+							<div class="card-header" id="headingOne">
+								<h5 class="mb-0">
+									<button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										User Interface
+									</button>
+								</h5>
+							</div>
+	
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#minishellAccordion">
+								<div class="card-body">
+									<ul>
+										<li>Displays a prompt when waiting for a new command.</li>
+										<li>Includes a functional command history.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+	
+						<div class="card">
+							<div class="card-header" id="headingTwo">
+								<h5 class="mb-0">
+									<button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Command Execution
+									</button>
+								</h5>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#minishellAccordion">
+								<div class="card-body">
+									<ul>
+										<li>Searches for and launches the correct executable based on the PATH variable or using a relative or absolute path.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+	
+						<div class="card">
+							<div class="card-header" id="headingThree">
+								<h5 class="mb-0">
+									<button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										Signal Handling
+									</button>
+								</h5>
+							</div>
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#minishellAccordion">
+								<div class="card-body">
+									<ul>
+										<li>Avoids using more than one global variable to indicate a received signal, ensuring that the signal handler does not access main data structures.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+	
+						<div class="card">
+							<div class="card-header" id="headingFour">
+								<h5 class="mb-0">
+									<button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+										Quotes and Special Characters
+									</button>
+								</h5>
+							</div>
+							<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#minishellAccordion">
+								<div class="card-body">
+									<ul>
+										<li>Does not interpret unclosed quotes or unnecessary special characters such as \ (backslash) or ; (semicolon).</li>
+										<li>Handles single quotes (') to prevent the shell from interpreting metacharacters in the quoted sequence.</li>
+										<li>Handles double quotes (") to prevent the shell from interpreting metacharacters in the quoted sequence except for the $ (dollar sign).</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+	
+						<div class="card">
+							<div class="card-header" id="headingFive">
+								<h5 class="mb-0">
+									<button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+										Redirections
+									</button>
+								</h5>
+							</div>
+							<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#minishellAccordion">
+								<div class="card-body">
+									<ul>
+										<li><code>&lt;</code> redirects input.</li>
+										<li><code>&gt;</code> redirects output.</li>
+										<li><code>&lt;&lt;</code> (heredoc) reads the input until a line containing a specified delimiter is seen, but does not update the history.</li>
+										<li><code>&gt;&gt;</code> redirects output in append mode.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+	
+						<div class="card">
+							<div class="card-header" id="headingSix">
+								<h5 class="mb-0">
+									<button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+										Pipes
+									</button>
+								</h5>
+							</div>
+							<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#minishellAccordion">
+								<div class="card-body">
+									<ul>
+										<li>Implements the <code>|</code> character to connect the output of one command to the input of the next command via a pipe.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+	
+						<div class="card">
+							<div class="card-header" id="headingSeven">
+								<h5 class="mb-0">
+									<button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+										Environment Variables
+									</button>
+								</h5>
+							</div>
+							<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#minishellAccordion">
+								<div class="card-body">
+									<ul>
+										<li>Handles environment variables, expanding to their values when <code>$</code> is followed by a sequence of characters.</li>
+										<li>Handles <code>$?</code>, which expands to the exit status of the most recently executed foreground pipeline.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+	
+						<div class="card">
+							<div class="card-header" id="headingEight">
+								<h5 class="mb-0">
+									<button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+										Control Signals in Interactive Mode
+									</button>
+								</h5>
+							</div>
+							<div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#minishellAccordion">
+								<div class="card-body">
+									<ul>
+										<li><code>ctrl-C</code> displays a new prompt on a new line.</li>
+										<li><code>ctrl-D</code> exits the shell.</li>
+										<li><code>ctrl-\</code> does nothing.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+	
+						<div class="card">
+							<div class="card-header" id="headingNine">
+								<h5 class="mb-0">
+									<button class="btn collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+										Built-in Commands
+									</button>
+								</h5>
+							</div>
+							<div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#minishellAccordion">
+								<div class="card-body">
+									<ul>
+										<li><code>echo</code> with the <code>-n</code> option.</li>
+										<li><code>cd</code> with only a relative or absolute path.</li>
+										<li><code>pwd</code>.</li>
+										<li><code>export</code>.</li>
+										<li><code>unset</code>.</li>
+										<li><code>env</code>.</li>
+										<li><code>exit</code>.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+	
+					<img src="https://raw.githubusercontent.com/xilen0x/xilen0x/master/images_x_repos/Screenshot%20from%202024-06-02%2013-26-40.png" alt="game" class="img-fluid">
+					<a href="https://github.com/xilen0x/42_minishell">
+						<button class="btn btn-outline-dark btn-color-sec" type="button">Visit the project page</button>
+					</a>
+				</div>
+			</div>
+	
+			<div class="col-md-6">
+				<div class="h-100 p-5 border card-color rounded-3">
+					<h2>The Philosophers Problem</h2>
+					<p>Project that seeks to understand the concepts of threading a process, how to create threads and work with mutexes.</p>
+					<img src="https://raw.githubusercontent.com/xilen0x/xilen0x/master/images_x_repos/philosophers_diagram.png" alt="game" class="img-fluid">
+					<a href="https://github.com/xilen0x/42_philosophers">
+						<button class="btn btn-outline-dark btn-color-sec" type="button">Visit the project page</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	
+	
     <div class="row align-items-md-stretch">
 		<div class="col-md-6">
 		  <div class="h-100 p-5 border card-color rounded-3">
